@@ -47,4 +47,5 @@ void loop() {
   } else if (state == 3 && !b) {
     state = 0;
   }
+  delay(1);
 }
