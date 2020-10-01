@@ -22,8 +22,8 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-const int BUTTON_PIN = 9;
-const int LED_PIN = 5;
+const int BUTTON_PIN = 9; // D4
+const int LED_PIN = 5; // D2
 
 int state = 0;
 
@@ -33,6 +33,7 @@ void setup() {
   pinMode(BUTTON_PIN, INPUT);
   pinMode(LED_PIN, OUTPUT);
   Serial.begin(115200);
+  digitalWrite(LED_PIN, LOW);
 }
 
 // the loop function runs over and over again forever
